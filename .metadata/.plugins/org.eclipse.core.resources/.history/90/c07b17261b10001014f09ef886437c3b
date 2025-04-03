@@ -1,0 +1,13 @@
+package exercicios;
+
+public class TesteProduto {
+
+	public static void main(String[] args) {
+		Produto p1 = new Produto();
+		Produto p2 = new Produto();
+		
+		p1.setDescicao("TV");
+		p1.setValor(1500);
+	}
+
+}

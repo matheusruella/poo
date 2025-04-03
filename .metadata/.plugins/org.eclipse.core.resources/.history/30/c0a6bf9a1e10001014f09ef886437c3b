@@ -1,0 +1,36 @@
+package exercicios;
+
+public class Produto {
+	private int codigo;
+	private String descicao;
+	private double valor;
+	// Construtor Default - Padrão
+	public Produto() {
+		System.out.println("Construtor inicializado");
+	}
+	
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getDescicao() {
+		return descicao;
+	}
+
+	public void setDescicao(String descicao) {
+		this.descicao = descicao;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+}

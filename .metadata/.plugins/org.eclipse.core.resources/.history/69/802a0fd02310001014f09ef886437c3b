@@ -1,0 +1,57 @@
+package exercicios;
+
+public class Funcionario {
+
+	private String nome;
+	private double salario;
+	//Pertence a classe (Visibilidade da classe)
+	private static int contador = 0;
+
+	public Funcionario(String nome, double salario) {
+		this.nome = nome;
+		this.salario = salario;
+		contador++;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public static int getContador() {
+		return contador;
+	}
+}
+
+
+
+
+
+
+
+
+
+package exercicios;
+
+public class TesteFuncionario {
+
+	public static void main(String[] args) {
+		
+		Funcionario f1 = new Funcionario("Amarildo", 5000);
+		Funcionario f2 = new Funcionario("Ana", 2890);
+		Funcionario f3 = new Funcionario("Joaquim", 3100);
+		
+		
+		
+		System.out.println(f1.getNome());
+		System.out.println(f2.getNome());
+		System.out.println(f3.getNome());
+		System.out.println("Total Geral de funcionários:"
+		+ Funcionario.getContador());
+
+	}
+
+}
